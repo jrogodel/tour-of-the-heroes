@@ -1,1 +1,3 @@
-# Angular 2 Starter Kit# tour-of-the-heroes
+# Angular 2 Tour of heroes tutorial
+
+
