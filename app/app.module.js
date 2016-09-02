@@ -8,11 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var core_1 = require('@angular/core');
 var forms_1 = require('@angular/forms');
 var app_component_1 = require('./app.component');
+var heroes_component_1 = require('./heroes.component');
 var hero_detail_component_1 = require('./hero-detail.component');
+var hero_service_1 = require('./hero.service');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,11 +26,11 @@ var AppModule = (function () {
             ],
             declarations: [
                 app_component_1.AppComponent,
+                heroes_component_1.HeroesComponent,
                 hero_detail_component_1.HeroDetailComponent
             ],
-            bootstrap: [
-                app_component_1.AppComponent
-            ]
+            providers: [hero_service_1.HeroService],
+            bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
